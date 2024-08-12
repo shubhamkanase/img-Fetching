@@ -18,9 +18,9 @@ const Home = () => {
   const handleAddToCart = () => {
     if (price && imageUrl) {
       dispatch(addToCart({ imageUrl, price: parseFloat(price) }));
-      setPrice(''); // Clear the price input
-      dispatch(fetchDogImage()); // Fetch a new image after adding to cart
-      alert('Image successfully added to cart!'); // Show success message
+      setPrice(''); 
+      dispatch(fetchDogImage());
+      alert('Image successfully added to cart!'); 
     }
   };
 
